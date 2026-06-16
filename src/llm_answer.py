@@ -25,6 +25,12 @@ def generate_grounded_answer(question, draft_answer, insights, sources, api_key,
     """Use OpenAI to turn retrieved rows into a better grounded answer."""
     if not api_key:
         return None
+    if "your-openai-api-key" in api_key.lower() or api_key.strip().startswith("your-"):
+        return {
+            "error": "OpenAI API key is still set to the placeholder value. Replace it in Streamlit secrets with a real key from the OpenAI platform.",
+            "answer": draft_answer,
+            "insights": insights,
+        }
 
     try:
         from openai import OpenAI
@@ -93,8 +99,14 @@ Return valid JSON with these keys:
             "model": selected_model,
         }
     except Exception as exc:
+        message = str(exc)
+        if "invalid_api_key" in message or "Incorrect API key" in message or "401" in message:
+            message = (
+                "OpenAI rejected the API key. Check Streamlit secrets and replace "
+                "OPENAI_API_KEY with a valid key from the OpenAI platform."
+            )
         return {
-            "error": f"OpenAI answer generation failed: {exc}",
+            "error": message,
             "answer": draft_answer,
             "insights": insights,
         }
