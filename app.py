@@ -5,6 +5,7 @@ import streamlit as st
 
 from src.charts import bar_chart, currency, pie_chart
 from src.data_loader import load_all_data
+from src.llm_answer import generate_grounded_answer
 from src.qa_engine import answer_question
 from src.scoring import (
     score_asset_need,
@@ -46,6 +47,16 @@ def set_example_question(question):
     st.session_state["aip_question"] = question
 
 
+def get_openai_settings():
+    try:
+        api_key = st.secrets.get("OPENAI_API_KEY")
+        model = st.secrets.get("OPENAI_MODEL", "gpt-5.5")
+    except Exception:
+        api_key = None
+        model = "gpt-5.5"
+    return api_key, model
+
+
 def ask_aip_data_view(data, asset_needs, scheme_priority, challenge, delivery_scored):
     st.subheader("Ask AIP Data")
     st.caption("Prototype question answering over the mock AIP data lake. Answers cite the source rows used.")
@@ -74,12 +85,36 @@ def ask_aip_data_view(data, asset_needs, scheme_priority, challenge, delivery_sc
     )
 
     answer = answer_question(question, data, asset_needs, scheme_priority, challenge, delivery_scored)
+    api_key, model = get_openai_settings()
+    llm_answer = None
+    if api_key and question:
+        with st.spinner("Generating grounded AI answer from cited source rows..."):
+            llm_answer = generate_grounded_answer(
+                question=question,
+                draft_answer=answer["answer"],
+                insights=answer["insights"],
+                sources=answer["sources"],
+                api_key=api_key,
+                model=model,
+            )
+
+    displayed_answer = llm_answer if llm_answer else answer
+
+    if api_key:
+        if llm_answer and "error" not in llm_answer:
+            st.success(f"OpenAI grounded answer mode is active using {llm_answer.get('model', model)}.")
+        elif llm_answer and "error" in llm_answer:
+            st.warning(llm_answer["error"])
+        else:
+            st.info("OpenAI answer mode is configured. Ask a question to use it.")
+    else:
+        st.info("Local prototype mode is active. Add OPENAI_API_KEY in Streamlit secrets to enable smarter grounded answers.")
 
     st.markdown("**Answer**")
-    st.info(answer["answer"])
+    st.info(displayed_answer["answer"])
 
     insight_cols = st.columns(3)
-    for index, insight in enumerate(answer["insights"][:3]):
+    for index, insight in enumerate(displayed_answer["insights"][:3]):
         with insight_cols[index]:
             st.markdown(f"**Insight {index + 1}**")
             st.write(insight)

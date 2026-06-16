@@ -228,6 +228,8 @@ Each file should have a named owner and approval status.
 
 The Streamlit prototype now includes a local `Ask AIP Data` workspace. This should be treated as a user-experience prototype for the future RAG tool, not as the final AI architecture.
 
+The prototype can optionally call the OpenAI API when `OPENAI_API_KEY` is configured in Streamlit secrets. This improves the wording and reasoning of the answer, but it still uses the local CSV retrieval layer as its evidence source. For a production highways data lake, this should be replaced with approved enterprise retrieval, permission controls and source governance.
+
 The first Microsoft RAG proof of concept could be:
 
 1. Select one asset class, for example structures.

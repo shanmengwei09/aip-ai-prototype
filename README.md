@@ -137,12 +137,40 @@ It currently:
 
 The production version should replace this local logic with governed retrieval from Azure AI Search and grounded answer generation using Azure OpenAI.
 
+## Optional OpenAI Answer Mode
+
+The app can use the OpenAI API to make the question box more like ChatGPT while still grounding answers in cited source rows.
+
+How it works:
+
+- The app first searches the mock CSV data lake.
+- It prepares a small set of relevant cited source rows.
+- If `OPENAI_API_KEY` is available, it sends the question, draft answer and cited rows to OpenAI.
+- The model is instructed to answer only from those rows.
+- If no key is available, the app falls back to the local deterministic answer.
+
+For Streamlit Community Cloud:
+
+1. Open the deployed app settings.
+2. Go to `Secrets`.
+3. Add:
+
+```toml
+OPENAI_API_KEY = "your-api-key"
+OPENAI_MODEL = "gpt-5.5"
+```
+
+`OPENAI_MODEL` is optional. If you do not set it, the app uses `gpt-5.5`.
+
+Do not commit `.streamlit/secrets.toml` or any API key to GitHub.
+
 ## Limitations
 
 - The data is fictional and should not be used for real investment decisions.
 - The dashboard does not connect to live systems.
 - There is no user authentication or permissions model.
 - The Ask AIP Data feature is deterministic local logic, not a generative model.
+- OpenAI answer mode only works after an API key is added in Streamlit secrets.
 - The scoring does not replace engineering judgement, asset lead review or governance decisions.
 - The Microsoft RAG design is a future-state design, not an implemented RAG service.
 
