@@ -1,0 +1,19 @@
+scheme_id,design_status,commercial_status,access_constraint,delivery_confidence,carryover_risk,key_constraint
+S001,Outline design complete,Route to market agreed,Moderate,High,Low,Bearing specification to be finalised
+S002,Detailed design complete,Contract in place,High,Medium,Medium,Night closures and concrete curing windows
+S003,Feasibility complete,Procurement not started,Moderate,Medium,Medium,Drainage access and environmental checks
+S004,Detailed design complete,Framework call-off ready,Low,High,Low,Controller lead time
+S005,Feasibility incomplete,Procurement not started,High,Low,High,Ground investigation and land access
+S006,Concept only,Procurement not started,Low,Medium,Medium,Business case confirmation
+S007,Detailed design in progress,Framework call-off ready,Moderate,High,Low,Traffic management coordination
+S008,Detailed design in progress,Commercial strategy agreed,High,Medium,High,Rail possession availability
+S009,Outline design complete,Procurement not started,Moderate,Medium,Medium,Programming with adjacent works
+S010,Concept only,Procurement not started,High,Low,High,Asset records and confined space access
+S011,Concept only,Procurement not started,Low,Medium,Low,Technology standards confirmation
+S012,Outline design complete,Commercial strategy agreed,Moderate,Medium,Medium,Retaining wall monitoring results
+S013,Feasibility incomplete,Procurement not started,Moderate,Low,High,Incomplete evidence and unclear driver
+S014,Detailed design complete,Contract in place,Moderate,High,Low,Steelwork fabrication slot
+S015,Concept only,Procurement not started,Low,Medium,Low,Confirm pavement treatment timing
+S016,Concept only,Procurement not started,High,Low,High,Affordability and stakeholder agreement
+S017,Not applicable,Not applicable,Low,Low,Low,Removed from plan
+S018,Detailed design in progress,Framework call-off ready,Moderate,Medium,Medium,Interim works access window

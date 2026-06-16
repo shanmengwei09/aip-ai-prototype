@@ -1,0 +1,11 @@
+risk_id,linked_asset_id,linked_scheme_id,risk_description,likelihood,impact,risk_score,mitigation,residual_risk
+R001,A001,S001,Bearing deterioration could restrict lane availability,3,4,12,Complete bearing renewal before next winter,Medium
+R002,A002,S002,Surface defects could increase skid risk and reactive repairs,4,4,16,Advance reconstruction and maintain monitoring,Medium
+R003,A003,S003,Culvert deterioration could reduce hydraulic capacity,3,3,9,Line culvert and update flood model,Low
+R004,A005,S005,Slope movement could affect carriageway edge,3,5,15,Undertake ground investigation and stabilisation,Medium
+R005,A008,S008,Underbridge capacity constraint could trigger traffic restriction,4,5,20,Strengthen structure and agree rail possessions,Medium
+R006,A010,S010,Interceptor failure could increase flooding risk,3,4,12,Confirm asset records and renew chambers,Medium
+R007,A012,S012,Retaining wall movement could create safety risk,3,5,15,Remediate wall and improve monitoring,Medium
+R008,A013,S013,Lighting failures could increase night-time safety concerns,2,3,,Validate electrical evidence and develop renewal scope,Unknown
+R009,A014,S014,Parapet non-compliance could affect containment at handback,3,4,12,Renew parapet barrier package,Low
+R010,A001,S016,Removal deferral may retain maintenance liability,2,3,6,Reassess rationalisation business case,Medium

@@ -1,0 +1,16 @@
+asset_id,condition_score,condition_trend,latest_inspection_date,evidence_source,confidence_level
+A001,2,Deteriorating,2026-01-18,Principal inspection,High
+A002,2,Rapid deterioration,2025-11-04,Scanner survey,Medium
+A003,3,Deteriorating,2025-09-22,CCTV drainage survey,Medium
+A004,4,Stable,2025-10-12,Technology availability report,High
+A005,2,Deteriorating,2024-12-08,Geotechnical inspection,Low
+A006,4,Improving,2026-02-14,Lighting inventory update,Medium
+A007,3,Stable,2025-07-02,Barrier condition survey,Medium
+A008,1,Rapid deterioration,2025-12-17,Principal inspection,High
+A009,3,Deteriorating,2025-08-30,Scanner survey,Medium
+A010,2,Deteriorating,2024-10-05,Drainage cleansing records,Low
+A011,4,Stable,2026-03-01,Fault management report,High
+A012,2,Deteriorating,2025-06-19,Retaining wall inspection,Medium
+A013,3,Stable,2024-11-15,Electrical test records,Low
+A014,2,Deteriorating,2025-05-10,Special inspection,Medium
+A015,4,Stable,2026-02-02,Visual safety inspection,High

@@ -1,0 +1,19 @@
+scheme_id,scheme_name,asset_class,linked_asset_id,intervention_type,proposed_year,previous_proposed_year,estimated_cost,investment_driver,safety_link,condition_link,performance_link,handback_link,whole_life_cost_link,evidence_strength,current_status,previous_plan_status,change_reason
+S001,River Lea overbridge bearing renewal,Structures,A001,Renewal,2027,2027,1850000,Condition and handback,Yes,Yes,Partial,Yes,Yes,Strong,Committed,Committed,No material change
+S002,M1 concrete bay reconstruction,Pavements,A002,Renewal,2026,2027,4200000,Safety and condition,Yes,Yes,Yes,Partial,Yes,Moderate,Committed,Deferred,Advanced due to rapid deterioration
+S003,A14 culvert lining package,Drainage,A003,Refurbishment,2028,2028,950000,Handback gap closure,Partial,Yes,No,Yes,Yes,Moderate,Proposed,Proposed,No material change
+S004,VMS 14 controller replacement,Technology,A004,Replacement,2026,2026,220000,Obsolescence,No,Partial,Yes,No,Partial,Moderate,Committed,Committed,No material change
+S005,A1 south cutting stabilisation,Geotechnical,A005,Stabilisation,2029,2027,2750000,Risk reduction,Yes,Partial,Partial,Yes,No,Weak,Under review,Committed,Delivery constraint under review
+S006,A12 lighting energy upgrade,Lighting,A006,Upgrade,2030,2030,680000,Energy efficiency,No,No,Partial,No,Yes,Weak,Proposed,New,New candidate from lifecycle review
+S007,M4 barrier containment upgrade,Barriers,A007,Upgrade,2027,2027,1300000,Safety improvement,Yes,Partial,No,Partial,Partial,Strong,Committed,Committed,No material change
+S008,M62 railway underbridge strengthening,Structures,A008,Strengthening,2026,2026,5600000,Condition and safety,Yes,Yes,Yes,Yes,Yes,Strong,Committed,Committed,Critical asset escalation
+S009,A50 eastbound resurfacing,Pavements,A009,Resurfacing,2028,2028,1450000,Condition,Partial,Yes,Partial,Partial,Yes,Moderate,Proposed,Proposed,No material change
+S010,M20 drainage interceptor renewal,Drainage,A010,Renewal,2027,2026,1180000,Resilience,Partial,Yes,Partial,Unclear,Partial,Weak,Under review,Committed,Access and evidence review required
+S011,M5 CCTV cluster refresh,Technology,A011,Replacement,2029,2029,390000,Asset obsolescence,No,Partial,Yes,No,Partial,Moderate,Proposed,New,Added from technology lifecycle model
+S012,A27 retaining wall remediation,Geotechnical,A012,Remediation,2027,2028,2400000,Handback and safety,Yes,Yes,Partial,Yes,Yes,Moderate,Committed,Proposed,Accelerated following inspection
+S013,A19 high mast lighting renewal,Lighting,A013,Renewal,2028,2028,760000,,Partial,Partial,No,Unclear,No,None,Under review,New,Driver to be confirmed
+S014,A38 parapet barrier package,Barriers,A014,Renewal,2026,2026,980000,Safety and handback,Yes,Yes,No,Yes,Partial,Strong,Committed,Committed,No material change
+S015,M3 slip road surface treatment,Pavements,A015,Preventative treatment,2030,2030,310000,Whole-life cost,No,Partial,No,No,Yes,Moderate,Proposed,New,New preventative candidate
+S016,Deferred legacy gantry removal,Structures,A001,Removal,2031,2028,890000,Network rationalisation,Partial,No,Partial,Unclear,No,Weak,Deferred,Committed,Deferred for affordability
+S017,Removed drainage trial,Drainage,A003,Trial,2026,2026,160000,Innovation trial,No,No,No,No,Partial,Weak,Removed,Proposed,Removed after scope challenge
+S018,Emergency parapet interim works,Barriers,A014,Interim works,2026,,420000,Safety interim measure,Yes,Partial,No,Yes,No,Moderate,New,Not in previous plan,Added after special inspection

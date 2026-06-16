@@ -1,0 +1,9 @@
+asset_id,handback_requirement,current_gap,proposed_intervention,handback_risk_level,consequence_if_deferred
+A001,Structure to meet agreed residual life and inspection requirements,Bearing condition below desired residual life,Bearing renewal and monitoring update,High,Potential handback liability and increased lane closure risk
+A003,Drainage asset to demonstrate serviceable capacity and inspection evidence,Incomplete evidence and lining requirement not closed,Culvert lining package,Medium,Residual flood risk and unresolved evidence gap
+A005,Geotechnical assets to have stable condition and accepted residual risk,Slope monitoring evidence incomplete and stabilisation not confirmed,Slope stabilisation and ground investigation,High,Potential unresolved safety risk at handback
+A008,Structures to meet capacity and condition expectations,Strengthening required for accepted handback condition,Underbridge strengthening,High,Potential capacity restriction and major liability retention
+A010,Drainage systems to have clear records and acceptable flood resilience,Asset records incomplete and chambers in poor condition,Interceptor renewal and records update,Medium,Continued flooding exposure and disputed handback evidence
+A012,Retaining walls to have current inspection and accepted movement risk,Wall movement risk remains open,Retaining wall remediation,High,Potential safety issue and handback non-compliance
+A014,Vehicle restraint systems to meet agreed containment expectations,Parapet approach barrier not aligned with desired standard,Parapet barrier renewal,High,Containment issue remains unresolved
+A013,Lighting assets to have current electrical evidence and serviceable condition,Electrical evidence incomplete,High mast lighting renewal,Medium,Unclear asset condition and possible future renewal liability

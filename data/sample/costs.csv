@@ -1,0 +1,19 @@
+scheme_id,previous_cost,current_cost,cost_change,cost_change_reason,affordability_pressure
+S001,1750000,1850000,100000,Inflation and bearing specification,Medium
+S002,3650000,4200000,550000,Concrete bay scope confirmed,High
+S003,900000,950000,50000,Survey refinement,Medium
+S004,210000,220000,10000,Controller price update,Low
+S005,1900000,2750000,850000,Ground risk allowance added,High
+S006,620000,680000,60000,Energy modelling update,Medium
+S007,1280000,1300000,20000,Minor quantity change,Medium
+S008,5050000,5600000,550000,Rail possession and strengthening scope,High
+S009,1320000,1450000,130000,Material rates and traffic management,Medium
+S010,820000,1180000,360000,Asset records uncertainty and access costs,High
+S011,360000,390000,30000,Device specification update,Low
+S012,2100000,2400000,300000,Monitoring and temporary works,High
+S013,520000,760000,240000,Scope uncertainty and poor asset data,High
+S014,940000,980000,40000,Steelwork rates,Medium
+S015,300000,310000,10000,Minor rate update,Low
+S016,650000,890000,240000,Removal method uncertainty,High
+S017,180000,160000,-20000,Trial scope reduced,Low
+S018,0,420000,420000,New urgent interim scope,High
