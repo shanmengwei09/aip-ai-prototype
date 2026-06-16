@@ -105,6 +105,21 @@ Return valid JSON with these keys:
                 "OpenAI rejected the API key. Check Streamlit secrets and replace "
                 "OPENAI_API_KEY with a valid key from the OpenAI platform."
             )
+        elif (
+            "insufficient_quota" in message
+            or "exceeded your current quota" in message
+            or "billing details" in message
+        ):
+            message = (
+                "OpenAI API quota is unavailable for this key. Check the OpenAI platform "
+                "usage, billing, project budget and monthly limits. The app is showing "
+                "the local prototype answer instead."
+            )
+        elif "rate limit" in message.lower() or "429" in message:
+            message = (
+                "OpenAI rate limiting is active. Wait briefly or reduce repeated requests. "
+                "The app is showing the local prototype answer instead."
+            )
         return {
             "error": message,
             "answer": draft_answer,
